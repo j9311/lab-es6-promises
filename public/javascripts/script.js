@@ -44,3 +44,17 @@ addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
 	})
 })
 
+
+// Iteration 3
+
+async function makeFood(step) {
+	for (let i = 0; i < step.length; i += 1) {
+		await addFood(step[i], '#brusselSprouts')
+	}
+	const image = document.createElement('img')
+	image.src = 'public/images/brusselSprouts.jpg'
+	document.querySelector('#table').appendChild(image)
+}
+makeFood(brusselSprouts)
+
+//BONUS
