@@ -7,17 +7,17 @@
 
 
 // Iteration 1
-addFood(steak[0], 'steak', () => {
-	addFood(steak[1], 'steak', () => {
-		addFood(steak[2], 'steak', () => {
-			addFood(steak[3], 'steak', () => {
-				addFood(steak[4], 'steak', () => {
-					addFood(steak[5], 'steak', () => {
-						addFood(steak[6], 'steak', () => {
-							addFood(steak[7], 'steak', () => {
+addFood(steak[0], '#steak', () => {
+	addFood(steak[1], '#steak', () => {
+		addFood(steak[2], '#steak', () => {
+			addFood(steak[3], '#steak', () => {
+				addFood(steak[4], '#steak', () => {
+					addFood(steak[5], '#steak', () => {
+						addFood(steak[6], '#steak', () => {
+							addFood(steak[7], '#steak', () => {
 								const image = document.createElement('img')
 								image.src = 'public/images/steak.jpg'
-								document.querySelector('table').appendChild(image)
+								document.querySelector('#table').appendChild(image)
 							})
 						})
 					})
@@ -44,14 +44,3 @@ addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
 	})
 })
 
-// // Iteration 3
-
-// async function makeFood(step) {
-// 	for (let i = 0; i < step.length; i += 1) {
-// 		await addFood(step[i], '#brusselSprouts')
-// 	}
-// 	const image = document.createElement('img')
-// 	image.src = 'public/images/brusselSprouts.jpg'
-// 	document.querySelector('#table').appendChild(image)
-// }
-// makeFood(brusselSprouts)
