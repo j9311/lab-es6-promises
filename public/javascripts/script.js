@@ -29,20 +29,20 @@ addFood(steak[0], 'steak', () => {
 
 
 
-// // Iteration 2
-// addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
-// 	addFood(mashPotatoes[1], '#mashPotatoes').then(() => {
-// 		addFood(mashPotatoes[2], '#mashPotatoes').then(() => {
-// 			addFood(mashPotatoes[3], '#mashPotatoes').then(() => {
-// 				addFood(mashPotatoes[4], '#mashPotatoes').then(() => {
-// 					const image = document.createElement('img')
-// 					image.src = 'public/images/mashPotatoes.jpg'
-// 					document.querySelector('#table').appendChild(image)
-// 				})
-// 			})
-// 		})
-// 	})
-// })
+// Iteration 2
+addFood(mashPotatoes[0], '#mashPotatoes').then(() => {
+	addFood(mashPotatoes[1], '#mashPotatoes').then(() => {
+		addFood(mashPotatoes[2], '#mashPotatoes').then(() => {
+			addFood(mashPotatoes[3], '#mashPotatoes').then(() => {
+				addFood(mashPotatoes[4], '#mashPotatoes').then(() => {
+					const image = document.createElement('img')
+					image.src = 'public/images/mashPotatoes.jpg'
+					document.querySelector('#table').appendChild(image) //append child
+				})
+			})
+		})
+	})
+})
 
 // // Iteration 3
 
